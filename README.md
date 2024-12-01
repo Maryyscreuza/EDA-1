@@ -9,6 +9,6 @@ Este repositório contém o material desenvolvido para a disciplina Estruturas d
     Desenvolver algoritmos eficientes para manipulação de dados.
     Aplicar boas práticas de programação e análise de desempenho.
 
-## pReferências
+## Referências
 
 * Notas de aula: Material fornecido pelo professor Nilton Correia
