@@ -138,3 +138,52 @@ Ponteiro é uma variável que armazena o endereço de memória de outra variáve
 	- Vetores ordenados:
 		- inclusão: insere na posição 1, passando os valores para a próxima casa (o valor 15 é inserido na 1, o 20 passa pra 2 e o 40 passa para a 3.)
 		- exclusão: exclui o elemento da posição 1, deslocando todos os elementos uma casa ao lado (excluindo o 20 da posição 1, o 40 passa para a 1, 50 para a 2 e 60 para a 3.)
+
+ ## ANÁLISE DE COMPLEXIDADE
+
+- Análise de algoritmos:
+	- Provar que um algoritmo está correto;
+	- Determinar recursos exigidos por um algoritmo (tempo, espaço, etc.);
+	- Comparar os recursos exigidos por diferentes algoritmos que resolvem o mesmo problema (um algoritmo mais eficiente exige menos recursos para resolver o mesmo problema)
+	- Prever o crescimento dos recursos exigidos por um algoritmo à medida que o tamanho dos dados de entrada cresce;
+	
+- Complexidade espacial e temporal:
+	- Complexidade espacial de um programa ou algoritmo: espaço de memória que necessita para executar até ao fim
+		- S(n) - espaço de memória exigido em função do tamanho (n) da entrada;
+	- Complexidade temporal de um programa ou algoritmo: tempo que demora a executar (tempo de execução)
+		- T(n) - tempo de execução em função do tamanho (n) da entrada;
+		
+	- Complexidade↑ versus Eficiência↓;
+	- Por vezes estima-se a complexidade para o "melhor caso" (pouco útil), o "pior caso" (mais útil) e o "caso médio" (igualmente útil);
+	
+- Complexidade em  Algoritmos Computacionais:
+	- O problema do caixeiro viajante é complexo, mas é um problema rotineiro no nosso país.
+	
+### Notações Assintóticas:
+
+- Motivação: Definir ordem entre funções.
+- Avaliação pontual -> Não tem sentido: f(N) < g(N) (Não estamos interessados em análise de pontos de função)
+
+- Forma de Análise: Taxa de crescimento.
+	- Notação O (notação "o" grande): 𝑇(𝑁) = 𝑂(𝑓(𝑁))  (T de N é O grande de F de N) // é a mais usada
+		- Se 𝑇(𝑁) = 𝑂 (𝑓(𝑁)): estamos guarantindo que a função 𝑇 𝑁 cresce a uma taxa igual ou inferior à 𝑓(𝑁) .
+		- Ainda, 𝑓(𝑁) representa o limite superior de 𝑇(𝑁). --> O "o" grande define o limite superior do algoritmo (não ultrapassa N ao quadrado(É O MÁXIMO)
+	- Notação Ω (notação Ômega): 𝑇(𝑁) = 𝛺 (𝑓(𝑁)) (T de N é o Ômega de F de N) // é usado para o melhor caso
+		- Se 𝑇(𝑁) = 𝑂(𝑓(𝑁)): estamos guarantindo que a função 𝑇(𝑁) cresce a uma taxa igual ou inferior à 𝑓(𝑁).
+		- Ainda, 𝑓(𝑁) representa o limite superior de 𝑇(𝑁).
+	- Notação Θ (notação téta): 𝑇(𝑁) = 𝛩(ℎ(𝑁)), 𝑠𝑒 𝑒 𝑠𝑜𝑚𝑒𝑛𝑡𝑒 𝑠𝑒 𝑇(𝑁) = 𝑂(ℎ(𝑁)) 𝑒 𝑇(𝑁) = 𝛺(ℎ(𝑁)). 
+		- Se 𝑇(𝑁) = 𝛩(ℎ(𝑁)): estamos guarantindo que a função 𝑇(𝑁) cresce a uma taxa igual à ℎ(𝑁).
+	- Exemplos:
+		- T(n) = O(n²) -> Limite máximo de n
+		- T(n) = Ω(n)  -> Limite mínimo de n
+		- T(n) = Θ(n²), se T(n) = O(n²) e T(n) = Ω(n²)
+		
+- Taxas de Crescimento Típicas:
+	- c – Constante;
+	- logN – Logarítmica;
+	- 𝑙𝑜𝑔²𝑁 – Log quadrática;
+	- N – Linear;
+	- N.logN
+	- 𝑁² – Quadrática;
+	- 𝑁³ – Cúbica;
+	- 2^N – Exponencial;
