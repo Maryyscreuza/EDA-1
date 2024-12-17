@@ -187,3 +187,49 @@ Ponteiro é uma variável que armazena o endereço de memória de outra variáve
 	- 𝑁² – Quadrática;
 	- 𝑁³ – Cúbica;
 	- 2^N – Exponencial;
+
+### Regras para a Análise de Algoritmos
+
+- Analisar quantas vezes os comandos rodam, analisando parte por parte e depois juntar tudo em uma soma
+- Quando na resposta tiver mais de um tipo de O, sempre vencerá a mais alta, por exemplo O(1+n+n²) = O(n²)
+
+- Análise Constante
+	- Se ele for constante, significa que ela não muda o esforço, podendo ser classificada como O(1)
+	- Por exemplo:
+		- O(5) no slide Instruções Simples
+		- O(32) no slide Laços de Repetição (1)
+
+- Análise Linear
+	- A linear cresce conforme o valor muda.
+	- Por exemplo:
+		- O(n) no slide Laços de Repetição (2)
+		
+- Análise Quadrática
+	- Laço dentro do outro laço sempre será quadrática (for/while)
+	- Por exemplo:
+		- O(n²) no slide Laços Aninhados		
+		- O(n²) no slide Estruturas Consecutivas
+		
+- Análise Condicional
+	- Quando utilizar if e else
+	- É alternativo, não dá para somar
+	- Exemplo slide Estrutura Condicional:
+		- O(1) + O(f(n)) = O(1 + f(n)), se condiçao é verdadeira
+		- O(1) + O(g(n)) = O(1 + g(n)), se condiçao é falsa
+		
+- Análise de Funções
+	- Calcula a complexidade de cada uma das funções e depois considera elas como uma instrução
+	- Exemplo slide Funções:
+		- O(f1) + O(f2) + O(f3) -> max(O(f1), O(f2), O(f3))
+		
+- Análise Log quadrática
+	- Para fazer comparações, utilizado por exemplo em busca binária
+	- Por exemplo:
+		- O(log²n) no slide Algoritmos O(log²n)
+		
+- Quando o tempo de resposta de um algoritmo depende também da configuração dos dados de entrada, podemos ter as seguintes análises:
+	- Melhor caso: menor tempo de execução;
+	- Pior caso: maior tempo de execução. Geralmente, priorizamos determinar o pior caso;
+	- Caso médio: média dos tempos de execução. Mais difícil de obter.
+	- Exemplo:
+		- A partir do slide Busca Sequencial
